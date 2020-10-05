@@ -23,7 +23,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
         if (version_compare($context->getVersion(), '1.0.0.0') < 0) {
  
             /**
-             * Create table 'maxime_jobs'
+             * Create table 'remi_jobs'
              */
  
             $tableName = $installer->getTable('remi_job');
@@ -85,7 +85,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
  
             $foreignKeys = array(
                 'department_id' => array(
-                    'ref_table' => 'maxime_department',
+                    'ref_table' => 'remi_department',
                     'ref_column' => 'entity_id',
                     'on_delete' => Table::ACTION_CASCADE,
                 )

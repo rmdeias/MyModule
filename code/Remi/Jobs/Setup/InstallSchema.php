@@ -31,6 +31,7 @@ class InstallSchema implements InstallSchemaInterface
          */
  
         $tableName = $installer->getTable('remi_department');
+        
         $tableComment = 'Department management for jobs module';
         $columns = array(
             'entity_id' => array(

@@ -4,7 +4,7 @@ class Index extends \Magento\Framework\App\Action\Action
 {
     public function execute()
     {
-       echo 'Execute Action Say_Index OK';
+       echo 'Execute Action Say_IndoK';
        die();
     }
 }

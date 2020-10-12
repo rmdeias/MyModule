@@ -54,7 +54,6 @@
                 <item name="template" xsi:type="string">ui/grid/toolbar</item>
             </item>
         </argument>
-
         <!-- Button to manage views -->
         <bookmark name="bookmarks">
             <argument name="data" xsi:type="array">
@@ -69,7 +68,6 @@
                 </item>
             </argument>
         </bookmark>
-        
         <!-- Button to manage columns -->
         <container name="columns_controls">
             <argument name="data" xsi:type="array">
@@ -82,8 +80,25 @@
                 </item>
             </argument>
         </container>
-    </container>
  
+        <!-- Filters -->
+        <filters name="listing_filters"/>
+            
+        <!-- Filter Search -->
+        <filterSearch name="fulltext">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="provider" xsi:type="string">jobs_department_listing.jobs_department_listing_data_source</item>
+                    <item name="chipsProvider" xsi:type="string">jobs_department_listing.jobs_department_listing.listing_top.listing_filters_chips</item>
+                    <item name="storageConfig" xsi:type="array">
+                        <item name="provider" xsi:type="string">jobs_department_listing.jobs_department_listing.listing_top.bookmarks</item>
+                        <item name="namespace" xsi:type="string">current.search</item>
+                    </item>
+                </item>
+            </argument>
+        </filterSearch>
+ 
+    </container>
  
  
     <!-- Columns -->
